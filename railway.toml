@@ -1,0 +1,10 @@
+[build]
+builder = "dockerfile"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+startCommand = "dotnet Infomicro.Server.dll"
+healthcheckTimeout = 30
+
+[[services]]
+name = "infomicro-relay"
